@@ -694,6 +694,11 @@
     tapable "^2.0.0"
     webpack "^5.1.0"
 
+"@types/dom-webcodecs@^0.1.3":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@types/dom-webcodecs/-/dom-webcodecs-0.1.7.tgz#29d3e7d4e0b9902676c599d74c1b6c15eafce714"
+  integrity sha512-1euwRyJ7rQrddOa24d5ZcoDRMp68xEIwyb7PKb3Wpc2OullUxHQ4a63WPa5V8R+KtCWISKjgS+f83HCUVhXS/w==
+
 "@types/eslint-scope@^3.7.0":
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/@types/eslint-scope/-/eslint-scope-3.7.1.tgz#8dc390a7b4f9dd9f1284629efce982e41612116e"
@@ -2908,8 +2913,14 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.2.4:
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
 
 "greenfield-compositor@link:../compositor-module":
-  version "0.0.0"
-  uid ""
+  version "0.0.13"
+  dependencies:
+    "@types/dom-webcodecs" "^0.1.3"
+    retransmitting-websocket "0.0.11"
+    tinyh264 "0.0.7"
+    westfield-runtime-common "0.5.1"
+    westfield-runtime-server "0.5.1"
+    xtsb "0.0.1-alpha.7"
 
 handle-thing@^2.0.0:
   version "2.0.1"
@@ -4104,11 +4115,9 @@ json3@^3.3.3:
   integrity sha512-c7/8mbUsKigAbLkD5B010BK4D9LZm7A1pNItkEwiUZRpIN66exu/e7YQWysGun+TRKaJp8MhemM+VkfWv42aCA==
 
 json5@2.x, json5@^2.1.2:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.0.tgz#2dfefe720c6ba525d9ebd909950f0515316c89a3"
-  integrity sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==
-  dependencies:
-    minimist "^1.2.5"
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
+  integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
 killable@^1.0.1:
   version "1.0.1"
@@ -5163,6 +5172,11 @@ ret@~0.1.10:
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
   integrity sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
 
+retransmitting-websocket@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/retransmitting-websocket/-/retransmitting-websocket-0.0.11.tgz#275148986d6c27cf7af605537f4ad131ea0ec6ba"
+  integrity sha512-ZMYskGmm8fMN4ofq8CN+pPcVbhQcGwfrgS65EWYUKjkV2EVcCU5fufL+/GtpfEBZn+fNx0GtYyv/CRFNkIfFfw==
+
 retry@^0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/retry/-/retry-0.12.0.tgz#1b42a6266a21f07421d1b0b54b7dc167b01c013b"
@@ -5786,10 +5800,10 @@ thunky@^1.0.2:
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-1.1.0.tgz#5abaf714a9405db0504732bbccd2cedd9ef9537d"
   integrity sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==
 
-tinyh264@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/tinyh264/-/tinyh264-0.0.6.tgz#82c7b4cf707d86d18f37d9568ce3e9a314474373"
-  integrity sha512-kRtsITABm854Y4oviN30oxJc7piJuuJwZpBkhD6/Ab7ZTW/1FNnKbP5kaoAMKhdwyDq9LMAFct4/sNPBZTJD1A==
+tinyh264@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/tinyh264/-/tinyh264-0.0.7.tgz#33dd85966895814bd3225042eac381b9ab54cff9"
+  integrity sha512-etkBRgYkSFBdAi2Cqk4sZgi+xWs/vhzNgvjO3z2i4WILeEmORiNqxuQ4URJatrWQ9LPNV3WPWAtzsh/LA/XL/g==
 
 tmpl@1.0.x:
   version "1.0.4"
@@ -6268,15 +6282,15 @@ westfield-runtime-client@^0.4.4:
   resolved "https://registry.yarnpkg.com/westfield-runtime-client/-/westfield-runtime-client-0.4.4.tgz#69de22c45046c7bb23aa4b0245c4986e9c10db21"
   integrity sha512-em63+8+dWs/Fcc557MdxTfnMidzYaMLGeMwKrgVmGFLg3cNE31S7aYg1tp5KYNZsFX8OMXXIDSG/MtF7EuCUEA==
 
-westfield-runtime-common@0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/westfield-runtime-common/-/westfield-runtime-common-0.4.4.tgz#a635b7fa7fa6eb17bf5df1d07d1a3c286156cdfb"
-  integrity sha512-jH9cFp7lqsLX71jhXDyDBE9rcfGu/BcOQUlmEf7D4joZCrnur4ZD8C2mpTAN79fFTodRqFUJo8fBXAaIGH8hzw==
+westfield-runtime-common@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/westfield-runtime-common/-/westfield-runtime-common-0.5.1.tgz#81c9ec065c9435868a70012154ef5774116dfb5a"
+  integrity sha512-+rTzScgzuZRQ1O9jVSmyj+RKYdKa3lr3kO64Zil2efe3EKzRn3xJuzEBzjeOCAlSkqIh9xgsGXdbSKueyfqOSg==
 
-westfield-runtime-server@0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/westfield-runtime-server/-/westfield-runtime-server-0.4.4.tgz#a5f58d9ecc38fd1d24b7c62c65a6b95526431a6b"
-  integrity sha512-FlaLkEVjgJBnBEHiHLbzjIiEV+yasVn+jM76eTM9YfLUwSD/7ACT6gw7xSCd4VnoG4G9EKS8VU/0tW7qYbxvqw==
+westfield-runtime-server@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/westfield-runtime-server/-/westfield-runtime-server-0.5.1.tgz#8367357690e1b8e6f973441281f367b481cce7e0"
+  integrity sha512-ycC3q9clfoLdZVbwQXbo/oNK7BK8wQjtdCt6jUlgvyc7KO3u3Gqks4B/BdzAHoVCo5CAOBPZnfOViZmdDTR1hg==
 
 whatwg-encoding@^1.0.5:
   version "1.0.5"
@@ -6395,6 +6409,11 @@ xmlchars@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/xmlchars/-/xmlchars-2.2.0.tgz#060fe1bcb7f9c76fe2a17db86a9bc3ab894210cb"
   integrity sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==
+
+xtsb@0.0.1-alpha.7:
+  version "0.0.1-alpha.7"
+  resolved "https://registry.yarnpkg.com/xtsb/-/xtsb-0.0.1-alpha.7.tgz#ed8b8d95604d3fecb3fcb27365f627bcb9596b1d"
+  integrity sha512-uA3G7VndWTV10MTMdJCSA+Pb2pAcsqwjvCK6dNnLfsrdUtPC06sq+5mK5SXrgtfDnQvcr8Gt8kaCogrtyrqhTw==
 
 y18n@^4.0.0:
   version "4.0.3"
